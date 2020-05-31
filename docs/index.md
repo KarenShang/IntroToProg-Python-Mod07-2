@@ -69,13 +69,13 @@ Figure 4. below shows the script working in Pycharm and Figure 5. Shows the crea
 
 *Figure 4.*  
 
-![Figure 5](https://github.com/agibbs-uscg/IntroToProg-Python-Mod07/blob/master/docs/Figure%205..png "Figure 5.")  
+![Figure 5](https://agibbs-uscg.github.io/IntroToProg-Python-Mod07/Figure%205..png "Figure 5.")  
 
 *Figure 5.*  
 
 Figure 6. below shows the script working in cmd.  
 
-![Figure 6](https://github.com/agibbs-uscg/IntroToProg-Python-Mod07/blob/master/docs/Figure%206..png "Figure 6.")  
+![Figure 6](https://agibbs-uscg.github.io/IntroToProg-Python-Mod07/Figure%206..png "Figure 6.")  
 
 *Figure 6.*
 
@@ -124,21 +124,21 @@ def read_data_from_file(file_name):
     
 Figure 9. shows my code running in Pycharm if I enter a number for a name. Figure 10 shows my code running in cmd if I enter a number for a name.  
 
-![Figure 9](https://github.com/agibbs-uscg/IntroToProg-Python-Mod07/blob/master/docs/Figure%209..png "Figure 9.")  
+![Figure 9](https://agibbs-uscg.github.io/IntroToProg-Python-Mod07/Figure%209..png "Figure 9.")  
 
 *Figure 9.*
 
-![Figure 10](https://github.com/agibbs-uscg/IntroToProg-Python-Mod07/blob/master/docs/Figure%2010%2C.png "Figure 10.")  
+![Figure 10](https://agibbs-uscg.github.io/IntroToProg-Python-Mod07/Figure%2010%2C.png "Figure 10.")  
 
 *Figure 10.*  
 
 Figure 11. shows my code working in Pycharm and returning the enter data stored in the .dat file.
-![Figure 11](https://github.com/agibbs-uscg/IntroToProg-Python-Mod07/blob/master/docs/Figure%2011..png "Figure 11.")
+![Figure 11](https://agibbs-uscg.github.io/IntroToProg-Python-Mod07/Figure%2011..png "Figure 11.")
 
 *Figure 11.*
 
 Figure 12. shows my code working in cmd and returning the enter data stored in the .dat file. 
-![Figure 12](https://github.com/agibbs-uscg/IntroToProg-Python-Mod07/blob/master/docs/Figure%2012..png "Figure 12.")
+![Figure 12](https://agibbs-uscg.github.io/IntroToProg-Python-Mod07/Figure%2012..png "Figure 12.")
 
 *Figure 12.*
 ## Summary
