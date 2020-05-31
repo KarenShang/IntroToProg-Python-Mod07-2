@@ -65,10 +65,65 @@ My script asks for input from the user which sets variables ‘strFirst’ and �
 
 Figure 4. below shows the script working in Pycharm and Figure 5. Shows the created .dat file. Note that the data is more or less unreadable in the .dat file as it has been converted through pickling.
 
-![Figure 5](https://github.com/agibbs-uscg/IntroToProg-Python-Mod07/blob/master/docs/Figure%204.png "Figure 5.")
-*Figure5.*
+![Figure 4](https://github.com/agibbs-uscg/IntroToProg-Python-Mod07/blob/master/docs/Figure%204.png "Figure 4.")  
 
+*Figure 4.*  
 
-### Using Exceptions in Python
+![Figure 5](https://github.com/agibbs-uscg/IntroToProg-Python-Mod07/blob/master/docs/Figure%205.png "Figure 5.")  
+
+*Figure 5.*  
+
+Figure 6. below shows the script working in cmd.  
+
+![Figure 6](https://github.com/agibbs-uscg/IntroToProg-Python-Mod07/blob/master/docs/Figure%206.png "Figure 6.")  
+
+*Figure 6.*
+
+### Using Exceptions in Python  
+
+Errors detected during execution are called exceptions, according to [Python.org](https://docs.python.org/3/tutorial/errors.html#exceptions). Handling exceptions is a way to use exceptions in a manner decided by the coder. Handling exceptions can be used to return certain detailed errors to users, or it can be used to inform other sections of your code. Using the ‘try’ functions, certain sections of code can be activated, and outcomes can determine outputs. Using a ‘raise’ exception allows the coder to determine the exception beyond those already within python.  
+
+I used exception handling a couple different ways in my code. First, I started with my pickling code from above. One mistake I can foresee a user making that I do not want them to make is entering in a number instead of their name. To ensure this does not happen I created a function called ‘user_errors’. This function takes the user inputs and runs them through a ‘try’ statement. If they are numeric an exception is ‘raised’, ‘else’ the script passing onto the next function. As shown in Figure 7. If the try is completed and a exception is raised, the function prints ‘there was and error!’ and then prints the exception which I set to equal ‘Do not use number for last names’ and the scripts exits. 
+
+```
+# Processing -------------------------------------- #
+def user_errors(strFirst, strLast):
+    try:
+        if strFirst.isnumeric():
+            raise Exception ('Do not use numbers for first names')
+        elif strLast.isnumeric():
+            raise Exception ('Do not use numbers for last names')
+        else:
+            pass
+
+    except Exception as e:
+        print("There was an error!")
+        print(e)
+        exit()
+```
+*Figure 7.*  
+
+The second way I used exception handling was to fix a possible issue I brought up earlier in this paper. Using the read function by itself within a pickle will only call the first line of file. One way to get all the data back from the file is using exception handling. As shown in Figure 8. I used a ‘while’ loop within my ‘read_data_from_file’ function. This while loop will continue to append objFileData list, reading line by line of the .dat file. As long as the .dat file remains open, the cursor will move from line to line as it is read. If this was done without exception handling, python would not run the script properly and return the error code ‘E0FError’ which is an end of file error because the .dat file will eventually run out of data and thus the last can not be read. To work around this, line 53 for Figure 8. shows that once my code reaches this exception error the while loop ‘breaks’ and the function completes. 
+```
+def read_data_from_file(file_name):
+    """ reads data to .dat file
+       :param file_name: (string) with name of file:
+
+    """
+    objFileData = []
+    objfile = open(file_name, 'rb')
+    while True:
+        try:
+            objFileData.append(pickle.load(objfile))
+        except EOFError:
+            break
+    objfile.close()
+    return objFileData
+```
+*Figure 8.*  
+    
+Figure 9. shows my code running in Pycharm if I enter a number for a name. Figure 10 shows my code running in cmd if I enter a number for a name. 
+    
+
 ## Summary
 Through this assignment I the pickle module to write binary code to a recall binary data from .dat file. I also used exception handling to ensure users entered the correct type of data and were shown clear error codes if they did not. I also used exception handling to inform a while loop on when to break. 
