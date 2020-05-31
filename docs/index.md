@@ -43,6 +43,7 @@ def read_data_from_file(file_name):
     return objFileData
 ```
 *Figure 2.*  
+
 Figure 2., starts function ‘save_data_to_file’ with parameter ‘file_name’ and ‘list_of_data’. This function opens a .dat file and readies it to be appended ('ab' in line 23). ‘ab’ is used to append binary code. ‘pickle.dump()’ on line 24 tell the script to dump to write the data within ‘list_of_data’ as binary code into the open file. Final the function closes the file. 
 The next function in Figure 2., starts the function read_data_from_file’ with parameter ‘filename’. This function opens the .dat file and prepares it to be read (‘rb’ in line 22). The binary code is then converted back and loaded in mem as ‘objFileData’ using ‘pickle.load()’. The file is closed, and the function returns the variable objFileData to be used.  
 
@@ -59,9 +60,13 @@ save_data_to_file(strFileName, list_of_data)
 print(read_data_from_file(file_name=strFileName))
 ```
 *Figure 3.*  
+
 My script asks for input from the user which sets variables ‘strFirst’ and ‘strLast’ in lines 41 and 42 of Figure 3. These two variables are then used to create variable ‘list_of_data’ on line 43. I then call function ‘save_data_to_file’ and then I call function ‘read_data_from_file’ and print its result. As constructed, this will only read and return the first line with the .dat file. This will be address in the next section of this paper. 
+
 Figure 4. below shows the script working in Pycharm and Figure 5. Shows the created .dat file. Note that the data is more or less unreadable in the .dat file as it has been converted through pickling.
 
+![Figure 5](https://github.com/agibbs-uscg/IntroToProg-Python-Mod07/blob/master/docs/Figure%204.png "Figure 5.")
+*Figure5.*
 
 
 ### Using Exceptions in Python
