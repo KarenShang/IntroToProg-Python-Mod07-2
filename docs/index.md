@@ -65,7 +65,7 @@ My script asks for input from the user which sets variables ‘strFirst’ and �
 
 Figure 4. below shows the script working in Pycharm and Figure 5. Shows the created .dat file. Note that the data is more or less unreadable in the .dat file as it has been converted through pickling.
 
-![Figure 4](https://github.com/agibbs-uscg/IntroToProg-Python-Mod07/blob/master/docs/Figure%204.png "Figure 4.")  
+![Figure 4](https://github.com/agibbs-uscg/IntroToProg-Python-Mod07/blob/master/docs/Figure%204.png)  
 
 *Figure 4.*  
 
