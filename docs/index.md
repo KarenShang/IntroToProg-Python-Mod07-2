@@ -124,7 +124,7 @@ def read_data_from_file(file_name):
     
 Figure 9. shows my code running in Pycharm if I enter a number for a name. Figure 10 shows my code running in cmd if I enter a number for a name.  
 
-![Figure 9](docs/Figure 9..png "Figure 9.")  
+![Figure 9](https://github.com/agibbs-uscg/IntroToProg-Python-Mod07/blob/master/docs/Figure%209..png "Figure 9.")  
 
 *Figure 9.*
 
